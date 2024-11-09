@@ -20,6 +20,13 @@
             justify-content: center;
             align-items: center;
         }
+        /* Attempt to hide TradingView logo and adjust borders */
+        .tradingview-widget-container iframe {
+            border: none; /* Removes the iframe border */
+        }
+        .tradingview-widget-container__widget > div > div:first-child {
+            display: none; /* Hides the TradingView logo if possible */
+        }
     </style>
 </head>
 <body>
